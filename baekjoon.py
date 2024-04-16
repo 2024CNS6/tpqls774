@@ -1,6 +1,6 @@
-while True:
-    try:
-        a, b = map(int, input().split())
-        print(a+b)
-    except:
-        break
+n, x = map(int, input().split())
+a = list(map(int, input().split()))
+
+for i in range(n):
+    if a[i] < x:
+        print(a[i], end=" ")
