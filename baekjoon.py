@@ -1,5 +1,6 @@
-print('|\\_/|')
-print('|q p|   /}')
-print('( 0 )"""\\')
-print('|"^"`    |')
-print('||_/=\\\__|')
+while True:
+    try:
+        a, b = map(int, input().split())
+        print(a+b)
+    except:
+        break
