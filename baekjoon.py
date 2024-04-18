@@ -1,6 +1,5 @@
-n, x = map(int, input().split())
-a = list(map(int, input().split()))
-
-for i in range(n):
-    if a[i] < x:
-        print(a[i], end=" ")
+n = int(input())
+num = 1
+for i in range(1, n+1):
+    num *= i
+print(num)
