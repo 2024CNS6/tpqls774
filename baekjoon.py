@@ -1,4 +1,2 @@
-import sys
-for i in range(100):
-    a = sys.stdin.readline().rstrip()
-    print(a)
+a, b = map(int, input().split())
+print(a**2-b**2)
