@@ -1,4 +1,5 @@
-t = int(input())
+import sys
+t = int(sys.stdin.readline().rstrip())
 for i in range(t):
-    a = input()
-    print(f"{a[0]}{a[-1]}")
+    a, b = map(int, sys.stdin.readline().rstrip().split())
+    print(a+b)
