@@ -1,6 +1,10 @@
-s = list(input().split())
-order = 0
-for i in range(len(s)):
-	order += ord(s[i][0]) - ord('a') + 1
-print(len(s))
-print(order)
+a = int(input())
+b = int(input())
+c = int(input())
+num = str(a*b*c)
+for i in range(10):
+    count = 0
+    for j in range(len(num)):
+        if num[j] == str(i):
+            count += 1
+    print(count)
