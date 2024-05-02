@@ -1,3 +1,11 @@
-d,h,w = map(int,input().split())
-r = d/(h**2+w**2)**0.5
-print(int(h*r),int(w*r))
+n = int(input())
+a = []
+b = []
+name = "양예성"
+for i in range(n):
+    if i%2 == 0:
+        a.append(name[i%3])
+    else:
+        b.append(name[i%3])
+print(f'전우진 : {''.join(a)}')
+print(f'윤세욱 : {''.join(b)}')
