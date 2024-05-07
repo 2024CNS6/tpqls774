@@ -1,11 +1,11 @@
-a, b, c = map(int, input().split())
-if a == 0:
-    a += c*c - b
-    print(a)
-elif b == 0:
-    b += c*c - a
-    print(b)
+n = int(input())
+cnt = 0
+x, s = map(int, input().split())
+for i in range(n):
+    c, p = map(int, input().split())
+    if x >= c and p > s:
+        cnt += 1
+if cnt >= 1:
+    print('YES')
 else:
-    for i in range(10**4):
-        if a+b == i*i:
-            print(i)
+    print('NO')
