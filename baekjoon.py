@@ -1,11 +1,9 @@
-n = int(input())
-cnt = 0
-x, s = map(int, input().split())
-for i in range(n):
-    c, p = map(int, input().split())
-    if x >= c and p > s:
-        cnt += 1
-if cnt >= 1:
-    print('YES')
+a, b = map(int, input().split())
+
+re_a = int(str(a)[::-1])
+re_b = int(str(b)[::-1])
+
+if re_a > re_b:
+    print(re_a)
 else:
-    print('NO')
+    print(re_b)
