@@ -1,6 +1,7 @@
-n, m = map(int, input().split())
-num = [i+1 for i in range(n)]
-for i in range(m):
-    a, b = map(int, input().split())
-    num[a-1], num[b-1] = num[b-1], num[a-1]
-print(*num)
+s = list(input())
+sc = s.copy()
+s.reverse()
+if s == sc:
+    print(1)
+else:
+    print(0)
