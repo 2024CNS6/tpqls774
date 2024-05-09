@@ -1,8 +1,6 @@
-n = int(input())
-num = list(map(int, input().split()))
-num.sort()
-m = max(num)
-new = []
-for i in range(len(num)):
-    new.append(num[i]/m*100)
-print(sum(new)/n)
+n, m = map(int, input().split())
+num = [i+1 for i in range(n)]
+for i in range(m):
+    a, b = map(int, input().split())
+    num[a-1], num[b-1] = num[b-1], num[a-1]
+print(*num)
