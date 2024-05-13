@@ -1,7 +1,5 @@
-s = list(input())
-sc = s.copy()
-s.reverse()
-if s == sc:
-    print(1)
-else:
-    print(0)
+s = input()
+arr = [-1] * 26
+for i in s:
+    arr[ord(i)-97] = s.index(i)
+print(*arr)
