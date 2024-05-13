@@ -1,7 +1,7 @@
-buger = []
-drink = []
-for i in range(3):
-    buger.append(int(input()))
-for i in range(2):
-    drink.append(int(input()))
-print(min(buger)+min(drink) -50)
+sum = 0
+for i in range(4):
+    sum += int(input())
+x = sum//60
+y = sum - x*60
+print(x)
+print(y)
