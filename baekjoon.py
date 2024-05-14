@@ -1,7 +1,5 @@
-sum = 0
-for i in range(4):
-    sum += int(input())
-x = sum//60
-y = sum - x*60
-print(x)
-print(y)
+a, b, v = map(int, input().split())
+if (v-b)%(a-b) == 0:
+    print((v-b)//(a-b))
+else:
+    print((v-b)//(a-b)+1)
