@@ -1,17 +1,18 @@
-al = [0 for i in range(26)]
-s_1 = input()
-s_2 = s_1.lower()
-max_count = []
+n = int(input())
+count = 0
+num = list(map(int, input().split()))
 
-for i in range(len(s_2)):
-    al[ord(s_2[i])-97] += 1
+for x in num:
+    if x == 1:
+        continue
+    is_prime = True
+    i = 2
+    while i * i <= x:
+        if x % i == 0:
+            is_prime = False
+            break
+        i += 1
+    if is_prime:
+        count += 1
 
-for i in range(26):
-    if al[i] == max(al):
-        max_count.append(max(al))
-        
-if len(max_count) > 1:
-    print('?')
-else:
-    s_max = chr(al.index(max(al)) + 97)
-    print(s_max.upper())
+print(count)
