@@ -1,10 +1,12 @@
 import sys
 input = sys.stdin.readline
+
 n = int(input())
-people = []
+s = []
 for i in range(n):
-    [a, b] = input().split()
-    people.append([int(a), b])
-people.sort(key=lambda x : (x[0]))
-for i in range(n):
-    print(*people[i])
+    s.append(input().strip())
+s = list(set(s))
+s.sort()
+s.sort(key=lambda x : len(x))
+for i in range(len(s)):
+    print(s[i])
