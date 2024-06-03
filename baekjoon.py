@@ -1,7 +1,10 @@
+import sys
+input = sys.stdin.readline
 n = int(input())
-dt = []
+people = []
 for i in range(n):
-    dt.append(list(map(int, input().split())))
-dt.sort()
+    [a, b] = input().split()
+    people.append([int(a), b])
+people.sort(key=lambda x : (x[0]))
 for i in range(n):
-    print(*dt[i])
+    print(*people[i])
